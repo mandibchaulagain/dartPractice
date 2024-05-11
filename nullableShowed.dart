@@ -3,6 +3,9 @@ void main() {
   display2("Sita");
   display("Ganesh", null);
   display2("Laxman", "Villain");
+  display3();
+  display3(name: "ram", cast: "Third actor");
+  display3(cast: "tori actor", name: "Shashwat");
 }
 
 void display(String name, [String? cast]) {
@@ -10,5 +13,9 @@ void display(String name, [String? cast]) {
 }
 
 void display2(String name, [String? cast = ""]) {
+  print("Hello. $name $cast");
+}
+
+void display3({String name = "", String cast = ""}) {
   print("Hello. $name $cast");
 }
